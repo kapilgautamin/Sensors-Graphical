@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroupBatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RadioButton
+            android:id="@+id/Radio1"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="1 sec"
+            android:checked="false" />
+
+
+        <RadioButton
+            android:id="@+id/Radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:text="2 sec"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 sec"
+            android:id="@+id/Radio3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 sec"
+            android:id="@+id/Radio4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:text=""
+        android:visibility="gone"
+        android:id="@+id/manualBatchText2"
+        android:layout_below="@+id/radioGroupBatch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual Entry"
+        android:id="@+id/buttonManual2"
+        android:layout_below="@+id/manualBatchText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/setBatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Batch"
+        android:layout_alignTop="@+id/buttonManual2"
+        android:layout_toRightOf="@+id/buttonManual2"
+        android:layout_toEndOf="@+id/buttonManual2" />
+
+</RelativeLayout>
